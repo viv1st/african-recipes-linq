@@ -10,15 +10,33 @@ class Program
 {
     static void Main()
     {
+        // Lire les données JSON et XML
+        var recettesData = ReadData();
+
+        // Exemple de recherche
+        var searchResults = SearchRecettes(recettesData, "Poulet");
+
+        // Exemple de tri
+        var sortedResults = SortRecettes(searchResults, "Nom");
+
+        // Exemple de condition de recherche
+        var filteredResults = FilterRecettes(sortedResults, r => r.Nom.Contains("Poulet"));
+
+        // Afficher les résultats
+        foreach (var recette in filteredResults)
+        {
+            Console.WriteLine($"Nom: {recette.Nom}, Origine: {recette.Origine}");
+        }
+
         // Lire le fichier JSON
         string jsonFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data.json");
         string jsonData = File.ReadAllText(jsonFilePath);
 
         // Désérialiser le JSON en objets C#
-        ListeRecettesData recettesData = JsonConvert.DeserializeObject<ListeRecettesData>(jsonData);
+        ListeRecettesData recettesDataInitial = JsonConvert.DeserializeObject<ListeRecettesData>(jsonData);
 
         // Créer le document XML
-        XDocument xmlDocument = CreateXmlDocument(recettesData);
+        XDocument xmlDocument = CreateXmlDocument(recettesDataInitial);
 
         // Afficher le document XML
         Console.WriteLine(xmlDocument);
@@ -103,5 +121,58 @@ class Program
             Directory.CreateDirectory(jsonDirectory);
         }
         File.WriteAllText(jsonFilePath, json);
+    }
+
+    static ListeRecettesData ReadData()
+    {
+        // Lire le fichier JSON
+        string jsonFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data.json");
+        string jsonData = File.ReadAllText(jsonFilePath);
+        var recettesData = JsonConvert.DeserializeObject<ListeRecettesData>(jsonData);
+
+        // Lire le fichier XML
+        string xmlFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Recettes.xml");
+        if (File.Exists(xmlFilePath))
+        {
+            XDocument xmlDocument = XDocument.Load(xmlFilePath);
+            var xmlRecettes = (from recette in xmlDocument.Descendants("Recette")
+                               select new Recette
+                               {
+                                   Nom = recette.Element("Nom")?.Value,
+                                   Origine = recette.Element("Origine")?.Value,
+                                   Ingrédients = (from ingredient in recette.Element("Ingrédients")?.Elements("Ingrédient")
+                                                  select ingredient.Value).ToList(),
+                                   Instructions = (from instruction in recette.Element("Instructions")?.Elements("Étape")
+                                                   select instruction.Value).ToList()
+                               }).ToList();
+            recettesData.Recettes.AddRange(xmlRecettes);
+        }
+
+        return recettesData;
+    }
+
+    static IEnumerable<Recette> SearchRecettes(ListeRecettesData recettesData, string searchTerm)
+    {
+        return recettesData.Recettes.Where(r =>
+            r.Nom.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+            r.Origine.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+            r.Ingrédients.Any(i => i.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)) ||
+            r.Instructions.Any(i => i.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+        );
+    }
+
+    static IEnumerable<Recette> SortRecettes(IEnumerable<Recette> recettes, string sortBy)
+    {
+        return sortBy switch
+        {
+            "Nom" => recettes.OrderBy(r => r.Nom),
+            "Origine" => recettes.OrderBy(r => r.Origine),
+            _ => recettes
+        };
+    }
+
+    static IEnumerable<Recette> FilterRecettes(IEnumerable<Recette> recettes, Func<Recette, bool> condition)
+    {
+        return recettes.Where(condition);
     }
 }
