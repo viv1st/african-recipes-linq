@@ -1,0 +1,20 @@
+# Ignorer les fichiers binaires de Visual Studio
+bin/
+obj/
+
+# Ignorer les fichiers de configuration utilisateur de Visual Studio
+.vscode/
+.vs/
+
+# Ignorer les fichiers de build
+*.exe
+*.dll
+*.pdb
+
+# Ignorer les fichiers de log
+*.log
+
+# Ignorer les fichiers de configuration
+appsettings.json
+African-recipes/xml/Recettes.xml
+African-recipes/json/Recettes.json

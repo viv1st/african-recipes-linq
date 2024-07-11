@@ -1,0 +1,39 @@
+{
+    "Recettes": [
+        {
+            "Nom": "Jollof Rice",
+            "Origine": "Nigeria",
+            "Ingrédients": [ "Riz", "Tomates", "Oignons", "Poivrons", "Huile", "Épices" ],
+            "Instructions": [
+                "Faire chauffer l'huile dans une casserole.",
+                "Ajouter les oignons et les poivrons, et faire revenir.",
+                "Ajouter les tomates et les épices, et laisser mijoter.",
+                "Ajouter le riz et de l'eau, puis cuire jusqu'à ce que le riz soit tendre."
+            ]
+        },
+        {
+            "Nom": "Yassa Poulet",
+            "Origine": "Sénégal",
+            "Ingrédients": [ "Poulet", "Oignons", "Citrons", "Moutarde", "Huile", "Épices" ],
+            "Instructions": [
+                "Mariner le poulet avec les oignons, le jus de citron, la moutarde et les épices.",
+                "Faire chauffer l'huile dans une casserole.",
+                "Ajouter le poulet mariné et faire revenir jusqu'à ce qu'il soit doré.",
+                "Ajouter la marinade et laisser mijoter jusqu'à ce que le poulet soit cuit."
+            ]
+        },
+        {
+            "Nom": "Bobotie",
+            "Origine": "Afrique du Sud",
+            "Ingrédients": [ "Viande hachée", "Oignons", "Pain", "Lait", "Œufs", "Épices" ],
+            "Instructions": [
+                "Faire tremper le pain dans le lait.",
+                "Faire revenir les oignons et la viande hachée dans une poêle.",
+                "Ajouter le pain trempé et les épices, et bien mélanger.",
+                "Transférer le mélange dans un plat allant au four.",
+                "Battre les œufs avec un peu de lait et verser sur le mélange.",
+                "Cuire au four jusqu'à ce que le dessus soit doré."
+            ]
+        }
+    ]
+}
