@@ -1,0 +1,126 @@
+{
+  "Recettes": [
+    {
+      "Nom": "Tajine d'Agneau",
+      "Origine": "Maroc",
+      "Ingrédients": [ "Agneau", "Oignons", "Ail", "Abricots secs", "Amandes", "Épices", "Huile d'olive" ],
+      "Instructions": [
+        "Faire chauffer l'huile d'olive dans un tajine.",
+        "Ajouter les oignons et l'ail, et faire revenir.",
+        "Ajouter l'agneau et les épices, et cuire jusqu'à ce que la viande soit dorée.",
+        "Ajouter les abricots secs et un peu d'eau.",
+        "Laisser mijoter à feu doux jusqu'à ce que l'agneau soit tendre.",
+        "Garnir d'amandes avant de servir."
+      ]
+    },
+    {
+      "Nom": "Fufu",
+      "Origine": "Ghana",
+      "Ingrédients": [ "Manioc", "Banane plantain" ],
+      "Instructions": [
+        "Éplucher le manioc et la banane plantain.",
+        "Couper en morceaux et cuire dans l'eau bouillante jusqu'à ce qu'ils soient tendres.",
+        "Égoutter et écraser pour former une pâte lisse.",
+        "Mouler la pâte en petites boules et servir avec une soupe ou une sauce."
+      ]
+    },
+    {
+      "Nom": "Bunny Chow",
+      "Origine": "Afrique du Sud",
+      "Ingrédients": [ "Pain", "Curry de poulet", "Pommes de terre", "Pois chiches", "Épices" ],
+      "Instructions": [
+        "Préparer le curry en faisant revenir le poulet avec les épices.",
+        "Ajouter les pommes de terre et les pois chiches, et laisser mijoter jusqu'à ce que tout soit cuit.",
+        "Couper le pain en deux et retirer une partie de la mie pour former une cavité.",
+        "Remplir la cavité du pain avec le curry chaud.",
+        "Servir immédiatement."
+      ]
+    },
+    {
+      "Nom": "Sosaties",
+      "Origine": "Afrique du Sud",
+      "Ingrédients": [ "Agneau", "Oignons", "Abricots secs", "Vinaigre", "Curry en poudre", "Brochettes" ],
+      "Instructions": [
+        "Mariner l'agneau avec les oignons, les abricots secs, le vinaigre et le curry.",
+        "Enfiler les morceaux d'agneau mariné sur des brochettes.",
+        "Faire griller les brochettes jusqu'à ce que la viande soit cuite.",
+        "Servir avec du riz ou une salade."
+      ]
+    },
+    {
+      "Nom": "Doro Wat",
+      "Origine": "Éthiopie",
+      "Ingrédients": [ "Poulet", "Oignons", "Ail", "Gingembre", "Berbere", "Œufs durs" ],
+      "Instructions": [
+        "Faire revenir les oignons, l'ail et le gingembre dans une casserole.",
+        "Ajouter le poulet et le berbere, et cuire jusqu'à ce que le poulet soit bien cuit.",
+        "Ajouter un peu d'eau pour créer une sauce épaisse.",
+        "Ajouter les œufs durs pelés et laisser mijoter quelques minutes.",
+        "Servir avec de l'injera ou du riz."
+      ]
+    },
+    {
+      "Nom": "Ndolé",
+      "Origine": "Cameroun",
+      "Ingrédients": [ "Feuilles de ndolé", "Arachides", "Poisson fumé", "Crevettes", "Oignons", "Ail", "Huile de palme" ],
+      "Instructions": [
+        "Faire bouillir les feuilles de ndolé pour enlever l'amertume.",
+        "Moudre les arachides et les faire cuire dans une casserole avec de l'eau pour former une pâte.",
+        "Faire revenir les oignons et l'ail dans l'huile de palme.",
+        "Ajouter les feuilles de ndolé et la pâte d'arachides, et bien mélanger.",
+        "Ajouter le poisson fumé et les crevettes, et laisser mijoter jusqu'à cuisson complète.",
+        "Servir avec du plantain ou du manioc."
+      ]
+    },
+    {
+      "Nom": "Egusi Soup",
+      "Origine": "Nigeria",
+      "Ingrédients": [ "Graines d'egusi", "Épinards", "Poisson séché", "Bœuf", "Huile de palme", "Oignons", "Tomates" ],
+      "Instructions": [
+        "Moudre les graines d'egusi en une poudre fine.",
+        "Faire chauffer l'huile de palme dans une casserole.",
+        "Ajouter les oignons et les tomates, et faire revenir.",
+        "Ajouter le bœuf et le poisson séché, et laisser mijoter.",
+        "Ajouter la poudre d'egusi et les épinards, et bien mélanger.",
+        "Laisser cuire jusqu'à ce que tout soit bien cuit.",
+        "Servir avec du fufu ou du garri."
+      ]
+    },
+    {
+      "Nom": "Couscous Royal",
+      "Origine": "Tunisie",
+      "Ingrédients": [ "Semoule de couscous", "Agneau", "Poulet", "Merguez", "Légumes", "Épices", "Pois chiches" ],
+      "Instructions": [
+        "Faire cuire les viandes (agneau, poulet, merguez) dans une grande casserole avec les épices.",
+        "Ajouter les légumes coupés en morceaux et laisser mijoter.",
+        "Préparer la semoule de couscous en la cuisant à la vapeur.",
+        "Ajouter les pois chiches et poursuivre la cuisson.",
+        "Servir les viandes et les légumes sur la semoule de couscous."
+      ]
+    },
+    {
+      "Nom": "Taguella",
+      "Origine": "Mali",
+      "Ingrédients": [ "Farine de blé", "Eau", "Sel", "Beurre" ],
+      "Instructions": [
+        "Mélanger la farine de blé avec de l'eau et du sel pour former une pâte.",
+        "Façonner la pâte en galettes épaisses.",
+        "Faire cuire les galettes dans une poêle chaude jusqu'à ce qu'elles soient dorées.",
+        "Servir avec du beurre fondu ou du lait."
+      ]
+    },
+    {
+      "Nom": "Matoke",
+      "Origine": "Ouganda",
+      "Ingrédients": [ "Banane plantain", "Tomates", "Oignons", "Poivrons", "Ail", "Huile", "Épices" ],
+      "Instructions": [
+        "Éplucher les bananes plantains et les couper en morceaux.",
+        "Faire revenir les oignons, les poivrons et l'ail dans l'huile.",
+        "Ajouter les tomates et les épices, et laisser mijoter.",
+        "Ajouter les bananes plantains et un peu d'eau.",
+        "Couvrir et cuire jusqu'à ce que les bananes soient tendres.",
+        "Servir chaud."
+      ]
+    }
+  ]
+}
